@@ -70,6 +70,6 @@ public class SiteUtilityCloud
 	
 	public void closeSite(RemoteWebDriver driver)
 	{
-		driver.close();
+		driver.quit();
 	}
 }
