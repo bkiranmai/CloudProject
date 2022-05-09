@@ -17,5 +17,5 @@ Feature: google search
       | chrome       | win 10 |
       # | chrome       | mac    |
       # | safari       | mac |
-      | edge         | win 10 |
+      #| edge         | win 10 |
       #| firefox      | linux |
