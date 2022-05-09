@@ -12,7 +12,7 @@ public class StepDef1
 {
 	public Shared sh;
 	//Dependency injection via constructor
-	public StepDef1(Shared sh)
+	public StepDef1(Shared sh)//pico container will provide the shared class object
 	{
 		this.sh=sh;
 	}
