@@ -6,7 +6,7 @@ import org.openqa.selenium.support.ui.FluentWait;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import pages.GooglePage;
-import utilities.SiteUtility;
+import utilities.SiteUtilityCloud;
 
 public class Shared
 {
@@ -15,7 +15,7 @@ public class Shared
 	public FluentWait<RemoteWebDriver> w;
 	public GooglePage obj;
 	public Scenario s; //to customize results file
-	public SiteUtility u;
+	public SiteUtilityCloud u;
 	
 	@Before
 	public void method(Scenario x)

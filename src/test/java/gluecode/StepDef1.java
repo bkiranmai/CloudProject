@@ -6,7 +6,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.GooglePage;
-import utilities.SiteUtility;
+import utilities.SiteUtilityCloud;
 
 public class StepDef1 
 {
@@ -17,11 +17,11 @@ public class StepDef1
 		this.sh=sh;
 	}
 	//Step definitions
-	@Given("open {string} browser")
-	public void method1(String bn)
+	@Given("open {string} browser in {string} platform")
+	public void method1(String bn, String osn) throws Exception
 	{
-		sh.u=new SiteUtility();
-		sh.driver=sh.u.openBrowser(bn);
+		sh.u=new SiteUtilityCloud();
+		sh.driver=sh.u.openBrowser(bn,osn);
 		sh.w=sh.u.defineWait(sh.driver,20,1000);
 		byte[] b=sh.driver.getScreenshotAs(OutputType.BYTES);
 		sh.s.attach(b,"image/png","Test failed");
